@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            MEDIDAS ABSOLUTAS
+            em, mm, in, px, pt, pc
+
+            MEDIDAS RELATIVAS
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+
+            font-size: 1em;
+
+            /* Peso das fontes
+                lighter, normal, bold, bolder
+            */
+        }
+
+        h1 {
+            /*shorthand font
+            font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sequi aliquam repellendus perspiciatis voluptates facilis explicabo aperiam quos vel consectetur vitae, eos, adipisci soluta asperiores officia at atque, provident doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima minus non repudiandae distinctio, exercitationem recusandae deleniti quaerat, illum quas ea officiis neque, vel cumque iusto asperiores ipsum earum nisi eveniet.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rem, quo, ipsum quia doloremque inventore provident ipsam sint mollitia natus sunt quae beatae quis exercitationem quam perferendis dolor deleniti! Praesentium.</p>
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, inventore! Inventore quos officia voluptatum labore quam cum ea, quas incidunt necessitatibus sapiente tempora, magnam, doloribus eos rerum? Odio, magnam exercitationem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur dolorem optio facere nulla deleniti fugiat ex tempora nemo, nisi ullam obcaecati quas voluptate! Iusto labore architecto voluptas accusantium debitis consequuntur.
+    </p>
+</body>
+</html>
