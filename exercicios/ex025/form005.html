@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>   
+    <form action="cadastro.js" method="get" autocomplete="on">
+       <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sexm" checked value="M"> <label for="sexm">Masculino</label> <br>
+            <input type="radio" name="sexo" id="sexf" value="F"> <label for="sexf">Feminino</label> <br>
+       </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="fut"> <label for="fut">Futebo</label>l <br>
+            <input type="checkbox" name="nat" id="nat"> <label for="nat">Natação</label> <br>
+            <input type="checkbox" name="basq" id="basq"> <label for="basq">Basquete</label> <br>
+            <input type="checkbox" name="vol" id="vol"> <label for="vol">Vôlei</label> <br>
+       </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
