@@ -7,18 +7,52 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>   
-    <form action="cadastro.js" method="get">
+    <form action="cadastro.js" method="post">
         <p>
             <label for="estd">Estado:</label>
             <select name="estado" id="estd">
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
+                <option value="" selected>--- escolha ---</option>
+                <optgroup label="Letra A">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                </optgroup>
                 <option value="BA">Bahia</option>
-                
-
+                <option value="CE">Ceará</option>option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="DF">Distrito Federal</option>
             </select>
+        </p>
+
+        <p>
+            <label for="prof">Profissão:</label>
+            <input type="text" name="prof" id="prof" list="listaprof">
+            <datalist id="listaprof">
+                <option value="ENG">Engenheiro</option>
+                <option value="PROG">Programador</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="msg">Mensagem:</label> <br>
+            <textarea name="msg" id="msg" cols="30" rows="10">
+
+            </textarea>
         </p>
 
         <p>
